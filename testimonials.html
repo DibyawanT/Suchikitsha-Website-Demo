@@ -5,6 +5,81 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+				* {box-sizing: border-box}
+				.slideshow-container {font-family: Verdana, sans-serif; margin:0}
+
+				/* Slideshow container */
+				.slideshow-container {
+				position: relative;
+				background: #f1f1f1f1;
+				}
+
+				/* Slides */
+				.mySlides {
+				display: none;
+				padding: 80px;
+				text-align: center;
+				}
+
+				/* Next & previous buttons */
+				.prev, .next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				margin-top: -30px;
+				padding: 16px;
+				color: #888;
+				font-weight: bold;
+				font-size: 20px;
+				border-radius: 0 3px 3px 0;
+				user-select: none;
+				}
+
+				/* Position the "next button" to the right */
+				.next {
+				position: absolute;
+				right: 0;
+				border-radius: 3px 0 0 3px;
+				}
+
+				/* On hover, add a black background color with a little bit see-through */
+				.prev:hover, .next:hover {
+				background-color: rgba(0,0,0,0.8);
+				color: white;
+				}
+
+				/* The dot/bullet/indicator container */
+				.dot-container {
+					text-align: center;
+					padding: 20px;
+					background: #ddd;
+				}
+
+				/* The dots/bullets/indicators */
+				.dot {
+				cursor: pointer;
+				height: 15px;
+				width: 15px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+				}
+
+				/* Add a background color to the active dot/circle */
+				.active, .dot:hover {
+				background-color: #717171;
+				}
+
+				/* Add an italic font style to all quotes */
+				q {font-style: italic;}
+
+				/* Add a blue color to the author */
+				.author {color: cornflowerblue;}
+		</style>
 	</head>
 	<body class="right-sidebar is-preload">
 		<div id="page-wrapper">
@@ -41,92 +116,6 @@
 			</div>
 			<!-- Main Wrapper -->
 				<div id="main-wrapper">
-					<div class="wrapper style2">
-						<div class="inner">
-							<div class="container">
-								<div class="row">
-									<div class="col-8 col-12-medium">
-										<div id="content">
-
-											<!-- Content -->
-
-												<article>
-													<header class="major">
-														<h2>Right Sidebar</h2>
-														<p>Which means the sidebar is on the right</p>
-													</header>
-
-													<span class="image featured"><img src="images/pic08.jpg" alt="" /></span>
-
-													<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-													Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-													Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-													consequat etiam lorem ipsum dolor sit amet nullam.</p>
-
-													<h3>More intriguing information</h3>
-													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-													justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-													ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-													vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-													Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-													rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-													Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-													Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
-
-													<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-													quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
-													Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-													fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-													Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-													Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
-												</article>
-
-										</div>
-									</div>
-									<div class="col-4 col-12-medium">
-										<div id="sidebar">
-
-											<!-- Sidebar -->
-
-												<section>
-													<header class="major">
-														<h2>Subheading</h2>
-													</header>
-													<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-													Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-													Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-													consequat etiam.</p>
-													<footer>
-														<a href="#" class="button icon solid fa-info-circle">Find out more</a>
-													</footer>
-												</section>
-
-												<section>
-													<header class="major">
-														<h2>Subheading</h2>
-													</header>
-													<ul class="style2">
-														<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-														<li><a href="#">Ornare in hendrerit in lectus</a></li>
-														<li><a href="#">Semper mod quis eget mi dolore</a></li>
-														<li><a href="#">Quam turpis feugiat sit dolor</a></li>
-														<li><a href="#">Amet ornare in hendrerit in lectus</a></li>
-														<li><a href="#">Semper mod quisturpis nisi</a></li>
-														<li><a href="#">Consequat etiam lorem phasellus</a></li>
-														<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-														<li><a href="#">Semper mod quisturpis nisi</a></li>
-													</ul>
-													<footer>
-														<a href="#" class="button icon solid fa-arrow-circle-right">Do Something</a>
-													</footer>
-												</section>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 					<div class="wrapper style3">
 						<div class="inner">
 							<div class="container">
@@ -135,75 +124,60 @@
 
 										<!-- Article list -->
 											<section class="box article-list">
-												<h2 class="icon fa-file-alt">Recent Posts</h2>
+												<h2 class="icon fa-file-alt">Testimonials</h2>
 
 												<!-- Excerpt -->
-													<article class="box excerpt">
-														<a href="#" class="image left"><img src="images/pic04.jpg" alt="" /></a>
-														<div>
-															<header>
-																<span class="date">July 24</span>
-																<h3><a href="#">Repairing a hyperspace window</a></h3>
-															</header>
-															<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus
-															semper mod quisturpis nisi consequat etiam lorem. Phasellus quam turpis,
-															feugiat et sit amet ornare in, hendrerit in lectus semper mod quis eget mi dolore.</p>
-														</div>
-													</article>
+													<div class="slideshow-container">
 
-												<!-- Excerpt -->
-													<article class="box excerpt">
-														<a href="#" class="image left"><img src="images/pic05.jpg" alt="" /></a>
-														<div>
-															<header>
-																<span class="date">July 18</span>
-																<h3><a href="#">Adventuring with a knee injury</a></h3>
-															</header>
-															<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus
-															semper mod quisturpis nisi consequat etiam lorem. Phasellus quam turpis,
-															feugiat et sit amet ornare in, hendrerit in lectus semper mod quis eget mi dolore.</p>
-														</div>
-													</article>
+<div class="mySlides">
+  <q>"This foundation is being run with skilful and honest work. 
+  Their contribution to humanity is unparalled .
+  In this day and age they are providing cost free hospitalization and medicare.
+  I wish them well in their future endevours."</q>
+  <p class="author">- Dr. Amit Chakraborty(Renowned Pyscologist)</p>
+</div>
 
-												<!-- Excerpt -->
-													<article class="box excerpt">
-														<a href="#" class="image left"><img src="images/pic06.jpg" alt="" /></a>
-														<div>
-															<header>
-																<span class="date">July 14</span>
-																<h3><a href="#">Preparing for Y2K38</a></h3>
-															</header>
-															<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus
-															semper mod quisturpis nisi consequat etiam lorem. Phasellus quam turpis,
-															feugiat et sit amet ornare in, hendrerit in lectus semper mod quis eget mi dolore.</p>
-														</div>
-													</article>
+<div class="mySlides">
+  <q>"I feel proud to be associated with Suchikitsha Foundation.
+  Saibal Trivedi(Secretary) and Sukomal Biswas (V.P) with their tireless work have provided poor and helpless
+  paitents to get medicare free of charge.I wish them Good Luck for the future." </q>
+  <p class="author">- Dr.Ahindranarayan Roy(Renowned Physician)</p>
+</div>
+
+<div class="mySlides">
+  <q>"Suchikitsha Foundation has been exemplary during the Covid-19 pandemic.
+  They have frequented Covid-19 patirnts homes and have brought premium healthcare to their doorstep."</q>
+  <p class="author">- Dr. Samit Mallick</p>
+</div>
+
+<div class="mySlides">
+  <q>"I am indebted to Suchikitsha Foundation and especially Mr. Saibal Trivedi,his help was immense in getting 
+  my bother Suvankar to a hospital.Through the untiring hard work of the doctors my brother was cured and returned home 
+  in the matter of days. "</q>
+  <p class="author">- Anirban Banerjee</p>
+</div>
+
+<div class="mySlides">
+  <q>"My son Sayantan Pal was like any other person,but a twist of faith left him sith two non-functioning kidneys.
+  I am financially challenged and kidney transplant was unaccesable to me. I got in touch with Suchikitsha Foundation.
+  They helped get my son admited to R.N Tagore Hospital and within days his kidney transplant was succesful. I am indebted to Mr. Saibal Trivedi for his support in these testing times.
+  "</q>
+  <p class="author">- Ajay Pal</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
 
 											</section>
-									</div>
-									<div class="col-4 col-12-medium">
-
-										<!-- Spotlight -->
-											<section class="box spotlight">
-												<h2 class="icon fa-file-alt">Spotlight</h2>
-												<article>
-													<a href="#" class="image featured"><img src="images/pic07.jpg" alt=""></a>
-													<header>
-														<h3><a href="#">Neural Implants</a></h3>
-														<p>The pros and cons. Mostly cons.</p>
-													</header>
-													<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus semper mod
-													quisturpis nisi consequat ornare in, hendrerit in lectus semper mod quis eget mi quat etiam
-													lorem. Phasellus quam turpis, feugiat sed et lorem ipsum dolor consequat dolor feugiat sed
-													et tempus consequat etiam.</p>
-													<p>Lorem ipsum dolor quam turpis, feugiat sit amet ornare in, hendrerit in lectus semper
-													mod quisturpis nisi consequat etiam lorem sed amet quam turpis.</p>
-													<footer>
-														<a href="#" class="button alt icon solid fa-file-alt">Continue Reading</a>
-													</footer>
-												</article>
-											</section>
-
 									</div>
 								</div>
 							</div>
@@ -253,9 +227,9 @@
 												<dl class="contact">
 													<dt>Address</dt>
 													<dd>
-														1234 Fictional Rd<br />
-														Nashville, TN 00000-0000<br />
-														USA
+														68/5C ,Ballygunge Place<br />
+														Kolkata,West Bengal<br />
+														India
 													</dd>
 													<dt>Phone</dt>
 													<dd>(000) 000-0000</dd>
@@ -286,6 +260,34 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				}
+</script>
 
 	</body>
 </html>
