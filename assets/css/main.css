@@ -1420,7 +1420,11 @@ input, select, textarea {
 			margin: 0 0 2.5em 0;
 			object-fit: fill;
 		}
-
+		.logo-rounded{
+			height:250px;
+			width:250px;
+	
+		}
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;
